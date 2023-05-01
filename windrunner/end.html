@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><meta name="viewport" content="width=device-width, initial-scale=1" />
+<head> 
+	<title>Sylvanas Windrunner</title>
+	<link rel="stylesheet" href="style.css">
+
+    <script>  //javascript for audio play/stop while pressing button, reference: www.w3schools.com
+        function playAudio() { // js function playAudio 
+            var audio = document.getElementById("fire"); //when this function is called, it gets element Id 'fire' and plays it
+            if (audio.paused) { //this part makes they audio play if its stopped
+                audio.play();
+            } else {  //if it already plays, it makes it stop
+                audio.pause();
+            }
+        }
+      </script>   <!-- audio is played when clicked on the button and it is stopped in the same way-->
+</head>
+<body>
+	<div class="endbg"> <!-- bg img container -->
+     <div class="back"> <a href="seven.html"><p class="pback">Back</p></a></div>
+        <audio id="fire"> <!-- audio element id used for js -->
+            <source src="audio/fire.wav" type="audio/wav"> <!-- audio source -->
+          </audio>
+          <button id="shootbutton" onclick="playAudio()">Hear the fire</button> <!-- button triggering playAudio function -->
+		
+            <div class="buttons">
+                <a href="home.html"><button class="restart">Restart</button></a>
+            </div>
+        </div>
+	</div>
+</body>
+</html>
+

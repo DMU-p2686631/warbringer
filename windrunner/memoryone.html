@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><meta name="viewport" content="width=device-width, initial-scale=1" />
+<head> 
+	<title>Sylvanas Windrunner</title>
+	<link rel="stylesheet" href="style.css">
+
+
+    <script>  //javascript for audio play while pressing button, reference: www.w3schools.com
+        function playAudio() { //when this function is called, it gets element Id 'arrowsound' and plays it
+          var audio = document.getElementById("arrowsound");
+          audio.play();
+        }
+      </script>   
+
+</head>
+<body>
+	<div class="memoryonebg"> <div class="back"> <a href="three.html"><p class="pback">Back</p></a></div> <!-- bg img container + button to go back to previous page -->
+		
+        <audio id="arrowsound">  <!-- audio id for the javascript function -->
+            <source src="audio/arrow.wav" type="audio/wav"> <!-- audio source -->
+          </audio>
+          <button id="shootbutton" onclick="playAudio()">Shoot!!</button>  <!-- a button with id element shootbutton that on click trigger playAudio function -->
+
+    <div class="memoryoneC">
+		<a href="memorytwo.html">
+			<h1 class="run">Run!</h1>
+		</a>
+	</div>
+    
+</body>
+</html>

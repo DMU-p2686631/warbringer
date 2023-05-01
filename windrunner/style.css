@@ -1,0 +1,462 @@
+
+html, body { 
+	margin: 0; /* removed default padding and margin */
+	padding: 0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* changing font */
+	font-size: 16px; /* sont size */
+}
+
+/* @media rule/media query is there to apply dofferemt style for various screen sizes, good for responsive web design*/
+@media (min-width: 601px) { /* if the width of the screen is bigger than 601px - bigger font size*/
+	body {
+		font-size: 20px; /* bigger font size for larger screen */
+	}
+}
+
+
+@media (max-width: 600px) { /* smaller font size for smaller screen, below 600px width */
+	body {
+		font-size: 12px; /* smaller font size for smaller screen */
+	}
+}
+
+.homebg { /* styling bg image */
+	background-image: url("image/home.jpg"); /* image source */
+	background-size: cover; /* stretching image to fit container if needed so it always covers a whole page*/
+	background-position: center; /* image is always centered */
+	background-repeat: no-repeat; /* no repetition  */
+	height: 100vh; /* height is set to 100 viewport height */
+}
+
+
+.container {
+	background-color: rgba(33,63,91,0.3); /* change the color and opacity of container */
+	padding: 20px;
+	position: fixed; /* fixed position relative to the viewport, always stays in the same place  */
+	bottom: 15vh; /*  distance from the bottom in viewport height */
+	left: 40vw;  /*  distance from the left in viewport width */
+	border-radius: 20px;  /*  border radius adds rounded corners to the container */
+	transition: background-color 0.3s ease;  /*  transition animation to the hover below */
+}
+
+.sylvanas{
+	left: 50%;
+	bottom: 20%;
+	transform: translateX(-50%); /* makes the element centered and moves it along the axis X */
+	background-color: rgba(33,63,91,0.5); /* change the color and opacity of container */
+	position: fixed; /* fixed position relative to the viewport, always stays in the same place  */
+	border-radius: 20px;  /*  border radius adds rounded corners to the container */
+	transition: background-color 0.3s ease;  /*  transition animation to the hover below */
+	padding: 20px;
+}
+.containerone{
+	background-color: rgba(33,63,91,0.3); /* change the opacity of container */
+	padding: 20px;
+	position: fixed;
+	bottom: 60vh;
+	left: 50vw;
+	border-radius: 20px;
+	transition: background-color 0.3s ease;
+}
+
+.container:hover,
+.containerA:hover,
+.containerB:hover,
+.containerC:hover,
+.containerone:hover,
+.sylvanas:hover {
+	background-color: rgba(33,63,91,0.8);  /*  changes transition color with the change of the opacity after hovering */
+}
+.sylvanas:hover{
+	color: #ffffff; /* changes text color when hovering over*/
+	opacity: 0.7; /* changes the opacity of element when hovering*/
+}
+
+
+h1{
+	margin: 0;
+	font-size: 30vh 30vw;  /* font size in vh and vw */
+	text-align: center;
+}
+
+a {
+	color: black;
+	text-decoration: none; /* remove link underline */
+}
+
+.onebg {
+	background-image: url("image/one.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.bottom-right{ 
+	background-color: rgba(33,63,91,0.3);
+	padding: 0px 40px 0px 40px;
+	position: fixed;
+	bottom: 20vh;
+	left: 35vw;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+
+.bottom-right:hover {
+	background-color: rgba(160, 168, 177, 0.8);  /* changes the opacity of the container after hovering over it */
+	transform: scale(1.3);  /*  transforms the scale of the container after hovering over it */
+}
+
+.why{
+text-align: center;
+font-size: 30px;
+text-decoration: underline;  /* adds underline to the text */
+}
+
+.twobg {
+	background-image: url("image/two.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.containerA{ 
+	background-color: rgba(33,63,91,0.3);
+	padding: 0px 10px 0px 10px;
+	position: fixed;
+	right: 5vw;
+	top: 30vh;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.containerB{ 
+	background-color: rgba(33,63,91,0.3);
+	padding: 0px 40px 0px 40px;
+	position: fixed;
+	top: 40vh;
+	right: 50vw;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.containerC{ 
+	background-color: rgba(33,63,91,0.3);
+	padding: 0px 40px 0px 40px;
+	position: fixed;
+	bottom: 40vh;
+	left: 50vw;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.threebg {
+	background-image: url("image/three.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.buttons {
+	position: absolute;  /* position set to absolute */
+	bottom: 0;  /*  distance from the bottom edge*/
+	left: 50%; 
+	transform: translateX(-50%);  /* moves element horizontally by 50% of its own width in the negative direction*/
+	display: flex; /* set container display property to be flex */
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px; /*  bottom margin */
+	
+}
+
+.buttons button {
+	margin: 0 10px; 
+	padding: 10px 20px;
+	border: none; /* removes button border */
+	border-radius: 5px; /* creates rounded corners */
+	background-color: #494547; /* bg colour */
+	font-size: 30px;
+	cursor: pointer; /* changes cursor type to pointer*/
+	font-weight: 600; /* changes font weight*/
+	transition: background-color 0.3s ease, transform 0.3s ease; /*  transition animation to the hoverering over */
+}
+
+.buttons button:hover {
+	background-color: rgb(146,125,119); /*  bg change after hovering */
+	color: #ffffff; /*  changes text colour after hovering */
+}
+
+.memoryonebg {
+	background-image: url("image/memoone.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+
+#shootbutton {  /* # selects element by Id */
+    position: fixed; /* fixed position */
+    top: 10vh;
+    right: 20vw;
+    background-color: rgba(181,144,99, 0.2); /* bg color with opacity set to 0.2 */
+	border-color: #494547; /* broder color*/
+	border-radius: 20px; /* creates rounded corners */
+    color: black; /* text color*/
+    font-size: 50px; 
+    cursor: crosshair; /* changes cursor to crosshair */
+	font-weight: bolder; /* chanegs font weight */
+	transition: background-color 0.3s ease, transform 0.3s ease; /* makes the transition to original state before hovering smoother */
+  }
+  
+#shootbutton:hover, /* # selects element by Id */
+.memoryoneC:hover  { /* . selects element by class */
+    background-color: rgba(181,144,99, 0.8); /* changes color and opacity of the bg after hovering */
+	transition: background-color 0.3s ease, transform 0.3s ease; /* hover transition animation */
+  }
+
+.memoryoneC{ 
+	background-color: rgba(181,144,99, 0.2);
+	padding: 0px 10px 0px 10px;
+	position: fixed;
+	right: 50vw;
+	bottom: 10vh;
+	transition: background-color 0.3s ease, transform 0.3s ease; /* makes the transition to original state before hovering smoother */
+	border-radius: 20px;
+}
+
+.run {
+font-size: 60px;
+}
+
+.memorytwo {
+	background-image: url("image/memotwo.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.containermemotwo{ 
+	background-color: rgba(181,144,99, 0.2);
+	padding: 0px 10px 10px 0px;
+	position: fixed;
+	right: 40vw;
+	bottom: 50vh;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.containermemotwo:hover {
+    background-color: rgba(181,144,99, 0.8);
+	transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+.memorythree {
+	background-image: url("image/memothree.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.containermemothree{ 
+	background-color: rgba(100,118,146, 0.4);
+	padding: 0px 10px 10px 0px;
+	position: fixed;
+	left: 40vw;
+	bottom: 50vh;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.containermemothree:hover {
+    background-color: rgba(46,59,80, 0.7);
+	transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .no{
+	text-align: center;
+	font-size: 60px;
+  }
+
+#memoryfour { /* styling element by id*/
+	background-image: url("image/memofour.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1; /* this element will be below since z-index is -1*/
+	opacity: 0; /* sets opacity to 0 so the element is not visible by default*/
+	transition: opacity 3s; /*sets the transition duration for opcaity*/
+  }
+
+#bansheebutton { /* styling element by id*/
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+	z-index: 1; /* this element will be above the bg since z-index is 1*/
+    background: rgba(11,13,15, 0.6); /* bg color with 0.6*/
+	text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	border-radius: 20px;
+	padding: 15px 20px 15px 20px;
+  }
+  
+#bansheebutton:hover {
+    background-color: rgba(190,178,176,0.2);
+	font-size: 40px;
+	transform: translateX(-50%); /* this transform helps with a scale change of the button to happen from the middle of it*/
+  }
+
+#fillbg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(26,38,58,255);
+	z-index: -2; /* z-index is set to -2 so it will be below everything and the rest of the elements will fade in over it*/
+}
+
+.reality {
+	padding: 0px 15px 0px 15px;
+	position: fixed;
+	display: none; /*making it not visible before triggering js*/
+	bottom: 10vh;
+	right: 10vw;
+	background-color: rgba(100,118,146, 0.4);
+	transition: background-color 0.3s ease;
+	border-radius: 20px;
+  }
+  .reality:hover {
+	background-color: rgba(46,59,80, 0.7);
+	transition: background-color 0.3s ease;
+  }
+  
+  .realityp{
+	font-size: 30px;
+	color: #000000;
+  }
+
+  .fourbg {
+	background-image: url("image/four.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.containerfourA{ 
+	background-color: rgba(74,37,32, 0.2);
+	padding: 0px 10px 10px 0px;
+	position: fixed;
+	left: 5vw;
+	top: 20vh;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.containerfourB{ 
+	background-color: rgba(74,37,32, 0.2);
+	padding: 0px 10px 10px 0px;
+	position: fixed;
+	left: 40vw;
+	bottom: 10vh;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.containerfourA:hover,
+.containerfourB:hover {
+	background-color: rgb(74,37,32, 0.8);
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fivebg {
+	background-image: url("image/five.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.containerfiveA{ 
+	background-color: rgba(74,37,32, 0.2);
+	padding: 0px 10px 0px 10px;
+	position: fixed;
+	right: 30vw;
+	top: 20vh;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.containerfiveB{ 
+	background-color: rgba(74,37,32, 0.2);
+	padding: 0px 10px 0px 10px;
+	position: fixed;
+	left: 40vw;
+	bottom: 10vh;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.containerfiveA:hover,
+.containerfiveB:hover {
+	background-color: rgb(74,37,32, 0.8);
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.burn{
+	font-size: 50px;
+}
+.cant{
+	font-size: 40px;
+}
+.sixbg {
+	background-image: url("image/six.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.sevenbg {
+	background-image: url("image/seven1.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.containerseven{ 
+	background-color: rgba(74,37,32, 0.2);
+	padding: 0px 10px 0px 10px;
+	position: fixed;
+	right: 30vw;
+	bottom: 50vh;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.containerseven:hover {
+	background-color: rgb(74,37,32, 0.8);
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.endbg {
+	background-image: url("image/seven.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.back{ 
+	background-color: rgba(33,63,91,0.5);
+	padding: 0px 40px 0px 40px;
+	position: fixed;
+	bottom: 3vh;
+	left: 3vw;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 20px;
+}
+.back:hover{ 
+	background-color: rgb(74,37,32, 0.8);
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}

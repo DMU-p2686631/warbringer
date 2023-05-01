@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><meta name="viewport" content="width=device-width, initial-scale=1" />
+<head> 
+	<title>Sylvanas Windrunner</title>
+	<link rel="stylesheet" href="style.css">
+
+
+    <script>  //javascript for fade in, opacity/display, reference: www.w3schools.com
+        function fadeIn() { //fadeIn function used for the  fade in background image and it is used for four actions below
+          var sound = document.getElementById("scream"); //plays the audio element scream
+          sound.play();
+          
+          var background = document.getElementById("memoryfour"); //background image element
+          background.style.opacity = 1; //opacity 1 makes it fully visible
+
+          var reality = document.querySelector('.reality'); //selects element with class reality
+         reality.style.display = 'block' //set display style to block making it a block element and visible
+
+          var button = document.getElementById("bansheebutton"); // 
+          button.style.display = "none"; // hiding the button by setting the display style to none
+        }
+      </script>  <!-- javascript for background fade in and audio play while pressing button, also makes the button to disappear after it is clicked-->
+</head>
+
+<body>
+	<audio id="scream"> <!-- audio element with id scream -->
+        <source src="audio/scream.mp3" type="audio/mp3"> <!-- audio source-->
+      </audio>
+      <button id="bansheebutton" onclick="fadeIn()">I BECAME A BANSHEE</button> <!-- a button that triggers fadeIn functions when clicked -->
+      
+      <div id="fillbg"> <!-- a container for the colour fill background --> <div class="back"> 
+        <a href="memorythree.html"><p class="pback">Back</p></a></div>
+        <div id="memoryfour">   <!-- bg img that will fade in after clicking a button -->
+          </div>
+        </div>
+      
+        <div class="reality"> <a href="four.html"><p class="realityp">Back to reality</p></a></div>    
+        <!-- a container that will be displayed after fadeIn function is triggered -->
+    
+</body>
+</html>
